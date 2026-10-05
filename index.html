@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carmel Arkin</title>
+  <meta name="description" content="Chess player, filmmaker, geography nerd, runner, and future bar mitzvah.">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Side Navigation -->
+  <nav class="side-nav" aria-label="Main navigation">
+    <div class="logo">CA</div>
+    <a href="#hero">Home</a>
+    <a href="#about">About</a>
+    <a href="#map-room">Map Room</a>
+    <a href="#camera">GMSTV</a>
+    <a href="#trail">On the Trail</a>
+    <a href="#dogs">Dog Sitting</a>
+    <a href="#games">Games</a>
+    <a href="#barmitzvah">Bar Mitzvah</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main">
+
+    <!-- ======== HERO ======== -->
+    <section id="hero" class="hero">
+      <div class="hebrew" aria-label="Welcome in Hebrew">ברוכים הבאים</div>
+      <h1>Carmel<br>Arkin</h1>
+      <div class="tagline" id="tagline" aria-live="polite"></div>
+    </section>
+
+    <!-- ======== ABOUT ======== -->
+    <section id="about">
+      <h2>About <span class="accent">Me</span></h2>
+      <p>
+        Hi, I'm Carmel. I'm 13 and I'm in 7th grade at Graham Middle School in
+        Mountain View. I love maps, chess, making videos, and being outside.
+        My favorite class is science. I speak English and Hebrew, and I'm
+        getting ready for my bar mitzvah this year.
+      </p>
+
+      <h3 style="font-family: var(--heading); color: #fff; margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.1rem;">Math <span class="accent">Academy</span></h3>
+      <div style="background: var(--bg-card); border: 1px solid var(--border); padding: 1.5rem; max-width: 400px; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem;">
+          <div>
+            <div style="font-size: 0.65rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.25rem;">Current Course</div>
+            <div style="font-family: var(--heading); font-size: 1rem; font-weight: 700; color: #fff;">Integrated Math I (Honors)</div>
+          </div>
+          <div style="width: 56px; height: 56px; border-radius: 50%; border: 3px solid var(--accent); display: flex; align-items: center; justify-content: center; font-family: var(--heading); font-weight: 900; font-size: 1.1rem; color: var(--accent);">74%</div>
+        </div>
+        <div class="progress-bar" style="margin-bottom: 0.5rem;">
+          <div class="fill" style="width: 74%;"></div>
+        </div>
+        <div style="font-size: 0.75rem; color: var(--text-dim);">Estimated completion: <span style="color: var(--text); font-weight: 600;">early July</span></div>
+      </div>
+
+      <div class="fun-facts">
+        <div class="fact-card">
+          <div class="label">Favorite Country</div>
+          <div class="value">Israel</div>
+        </div>
+        <div class="fact-card">
+          <div class="label">Chess Opening</div>
+          <!-- TODO: Carmel to fill in -->
+          <div class="value">TBD</div>
+        </div>
+        <div class="fact-card">
+          <div class="label">Currently Reading</div>
+          <!-- TODO: Carmel to fill in -->
+          <div class="value">TBD</div>
+        </div>
+        <div class="fact-card">
+          <div class="label">Longest Hike</div>
+          <!-- TODO: Carmel to fill in -->
+          <div class="value">TBD</div>
+        </div>
+        <div class="fact-card">
+          <div class="label">Favorite Animal</div>
+          <!-- TODO: Carmel to fill in -->
+          <div class="value">TBD</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== MAP ROOM ======== -->
+    <section id="map-room">
+      <h2>The Map <span class="accent">Room</span></h2>
+      <p>Places I've been, places I love, and places I want to go.</p>
+      <div id="map" role="application" aria-label="Interactive travel map"></div>
+      <div class="map-legend">
+        <span class="legend-visited">Visited</span>
+        <span class="legend-favorite">Favorite</span>
+        <span class="legend-want">Want to Visit</span>
+      </div>
+    </section>
+
+    <!-- ======== BEHIND THE CAMERA ======== -->
+    <section id="camera">
+      <h2>Behind the <span class="accent">Camera</span></h2>
+      <p>I make videos for GMSTV, the Graham Middle School TV station.</p>
+
+      <div class="video-grid">
+        <!-- TODO: Carmel to replace with real YouTube embed URLs -->
+        <div class="video-slot">Video 1 — paste YouTube embed here</div>
+        <div class="video-slot">Video 2 — paste YouTube embed here</div>
+        <div class="video-slot">Video 3 — paste YouTube embed here</div>
+      </div>
+
+      <h3 style="font-family: var(--heading); color: #fff; margin-top: 2rem; margin-bottom: 1rem; font-size: 1.1rem;">Upcoming</h3>
+      <div class="countdown-row">
+        <div class="countdown-item">
+          <div class="event-name">GMSTV Grammys</div>
+          <div class="countdown-value" data-countdown="2026-04-29T18:00:00">—</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== ON THE TRAIL ======== -->
+    <section id="trail">
+      <h2>On the <span class="accent">Trail</span></h2>
+
+      <h3 style="font-family: var(--heading); color: #fff; margin-bottom: 1rem; font-size: 1.1rem;">Running Goals</h3>
+      <div class="progress-wrap">
+        <div class="progress-label">
+          <!-- TODO: Carmel to fill in current and target mile time -->
+          <span>Current: TBD</span>
+          <span>Target: TBD</span>
+        </div>
+        <div class="progress-bar">
+          <div class="fill" style="width: 60%;"></div>
+        </div>
+      </div>
+
+      <h3 style="font-family: var(--heading); color: #fff; margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.1rem;">Favorite Hikes</h3>
+      <div class="trail-cards">
+        <div class="trail-card">
+          <img src="img/placeholder-mt-hamilton.jpg" alt="Mt. Hamilton">
+          <div class="info">
+            <h3>Mt. Hamilton</h3>
+            <!-- TODO: Carmel to fill in -->
+            <p>Amazing views from the top of the mountain.</p>
+          </div>
+        </div>
+        <div class="trail-card">
+          <img src="img/placeholder-angel-island.jpg" alt="Angel Island">
+          <div class="info">
+            <h3>Angel Island</h3>
+            <!-- TODO: Carmel to fill in -->
+            <p>A ferry ride and then hiking around the whole island.</p>
+          </div>
+        </div>
+        <div class="trail-card">
+          <img src="img/placeholder-hike-3.jpg" alt="Hike 3">
+          <div class="info">
+            <!-- TODO: Carmel to fill in -->
+            <h3>Your Next Hike</h3>
+            <p>Add your favorite hike here.</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="font-family: var(--heading); color: #fff; margin-top: 2.5rem; margin-bottom: 1rem; font-size: 1.1rem;">Nature Journal</h3>
+      <div class="journal-entry">
+        <img src="img/placeholder-journal-1.jpg" alt="Nature journal entry">
+        <div class="text">
+          <!-- TODO: Carmel to fill in -->
+          <h3>Journal Entry Title</h3>
+          <p>Write about something cool you saw on a hike or outside.</p>
+        </div>
+      </div>
+      <div class="journal-entry">
+        <img src="img/placeholder-journal-2.jpg" alt="Nature journal entry">
+        <div class="text">
+          <!-- TODO: Carmel to fill in -->
+          <h3>Another Entry</h3>
+          <p>Maybe about a bird, a cool rock, or a sunset.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== DOG SITTING ======== -->
+    <section id="dogs">
+      <h2>Dog <span class="accent">Sitting</span> 🐾</h2>
+      <p>
+        I take care of neighborhood dogs when their families are away.
+        Walks, feeding, playtime, and lots of belly rubs. Ask my parents
+        if you want to book me.
+      </p>
+      <div class="dog-gallery">
+        <!-- TODO: Carmel to add real dog photos -->
+        <img src="img/placeholder-dog-1.jpg" alt="Dog 1">
+        <img src="img/placeholder-dog-2.jpg" alt="Dog 2">
+        <img src="img/placeholder-dog-3.jpg" alt="Dog 3">
+      </div>
+    </section>
+
+    <!-- ======== GAMES ======== -->
+    <section id="games">
+      <h2>Game <span class="accent">Room</span></h2>
+      <p>A little arcade. Beat the AI at tic-tac-toe, or chase a high score on snake.</p>
+
+      <div class="game-tabs" role="tablist">
+        <button class="game-tab active" data-game="tic" role="tab" aria-selected="true">Tic-Tac-Toe</button>
+        <button class="game-tab" data-game="snake" role="tab" aria-selected="false">Snake</button>
+      </div>
+
+      <!-- TIC-TAC-TOE -->
+      <div class="game-pane active" id="game-tic" role="tabpanel">
+        <div class="game-meta">
+          <span class="game-label">You're <span class="x-color">X</span> — AI is <span class="o-color">O</span></span>
+          <div class="game-stats">
+            <span title="Your wins">W <strong id="tic-wins">0</strong></span>
+            <span title="Losses">L <strong id="tic-losses">0</strong></span>
+            <span title="Draws">D <strong id="tic-draws">0</strong></span>
+          </div>
+        </div>
+
+        <div class="difficulty" role="radiogroup" aria-label="Difficulty">
+          <button class="diff-btn active" data-diff="1">Easy</button>
+          <button class="diff-btn" data-diff="2">Medium</button>
+          <button class="diff-btn" data-diff="3">Hard</button>
+          <button class="diff-btn" data-diff="4">Impossible</button>
+        </div>
+
+        <div class="board" id="board"></div>
+        <p class="game-status" id="tic-status">Your turn</p>
+        <button class="game-btn" id="tic-new">New game</button>
+      </div>
+
+      <!-- SNAKE -->
+      <div class="game-pane" id="game-snake" role="tabpanel">
+        <div class="game-meta">
+          <span class="game-label">Arrow keys, WASD, or swipe</span>
+          <div class="game-stats">
+            <span>Score <strong id="snake-score">0</strong></span>
+            <span title="Best score">Best <strong id="snake-best">0</strong></span>
+          </div>
+        </div>
+
+        <canvas id="snakeCanvas" width="400" height="400" aria-label="Snake game canvas"></canvas>
+        <p class="game-status" id="snake-status">Press Start to play</p>
+
+        <div class="snake-control-row">
+          <button class="game-btn" id="snake-start">Start</button>
+          <select class="game-btn game-select" id="snake-speed" aria-label="Snake speed">
+            <option value="160">Chill</option>
+            <option value="120" selected>Normal</option>
+            <option value="80">Spicy</option>
+            <option value="55">Insane</option>
+          </select>
+        </div>
+
+        <div class="snake-controls" aria-label="Snake on-screen controls">
+          <div></div>
+          <button data-dir="up" aria-label="Up">&#8593;</button>
+          <div></div>
+          <button data-dir="left" aria-label="Left">&#8592;</button>
+          <button data-dir="down" aria-label="Down">&#8595;</button>
+          <button data-dir="right" aria-label="Right">&#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== BAR MITZVAH ======== -->
+    <section id="barmitzvah">
+      <h2>Bar <span class="accent">Mitzvah</span></h2>
+      <div class="bm-countdown" id="bm-countdown">—</div>
+
+      <div class="parasha">
+        <h3>My Parasha: Korach</h3>
+        <p style="color: var(--text-dim); font-size: 0.8rem; margin-bottom: 0.5rem;">Numbers 16–18</p>
+        <p>
+          <!-- TODO: Carmel to fill in -->
+          What this story means to me — I'll write about this closer to the date.
+        </p>
+      </div>
+
+      <div class="rsvp-block">
+        <div class="rsvp-label">RSVP</div>
+        <div class="rsvp-grid">
+          <a class="rsvp-card" href="https://www.evite.com/event/02F6IIAE4SKDAAWSIEPRJGGKEYNC7Y" target="_blank" rel="noopener">
+            <div class="rsvp-eyebrow">Saturday Service</div>
+            <div class="rsvp-title">Tfila &amp; Luncheon</div>
+            <div class="rsvp-cta">RSVP on Evite →</div>
+          </a>
+          <a class="rsvp-card" href="https://www.evite.com/event/02F6IIAE4SKDAADNYEPRKFXOEOUV7Y" target="_blank" rel="noopener">
+            <div class="rsvp-eyebrow">Teens only</div>
+            <div class="rsvp-title">Party &amp; Laser Tag</div>
+            <div class="rsvp-cta">RSVP on Evite →</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="pins.js"></script>
+  <script src="script.js"></script>
+  <script src="games.js"></script>
+
+</body>
+</html>
