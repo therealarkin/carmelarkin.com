@@ -18,4 +18,19 @@ Edit `pins.js`:
 Each pin needs: `{ name: "Place Name", lat: 37.0, lng: -122.0 }`
 
 ### Add YouTube videos
+In `index.html`, find the `video-slot` divs and replace with:
+```html
+<div class="video-slot">
+  <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+</div>
+```
 
+### Update fun facts
+Search for `<!-- TODO: Carmel to fill in -->` in `index.html` and replace the text.
+
+## How to redeploy
+```bash
+cd ~/Documents/carmelarkin.com
+netlify deploy --prod
+```
+Or just push to git if connected to Netlify via GitHub.
